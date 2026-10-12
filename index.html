@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Política de Privacidad - Wallet Segura Extension</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: #121212;
+            color: #e0e0e0;
+            line-height: 1.6;
+            padding: 40px 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            color: #ffffff;
+            border-bottom: 2px solid #333;
+            padding-bottom: 10px;
+            font-size: 2rem;
+        }
+
+        h2 {
+            color: #4fc3f7;
+            margin-top: 30px;
+            font-size: 1.4rem;
+        }
+
+        p,
+        li {
+            color: #b0bec5;
+            font-size: 1rem;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        code {
+            background-color: #1e1e1e;
+            color: #ff8a80;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-family: monospace;
+            font-size: 0.9rem;
+        }
+
+        .highlight-box {
+            background-color: #1a237e;
+            border-left: 4px solid #29b6f6;
+            padding: 15px;
+            border-radius: 4px;
+            margin: 20px 0;
+        }
+
+        .highlight-box p {
+            color: #ffffff;
+            margin: 0;
+            font-weight: 500;
+        }
+
+        footer {
+            margin-top: 50px;
+            text-align: center;
+            font-size: 0.85rem;
+            color: #757575;
+            border-top: 1px solid #333;
+            padding-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Privacy Policy for Wallet Segura Extension</h1>
+    <p><strong>Effective Date:</strong> October 12, 2026</p>
+
+    <p>At <strong>Wallet Segura</strong>, we take your privacy and the security of your credentials very seriously. This
+        Privacy Policy describes how the <strong>Wallet Segura Extension</strong> handles data and ensures your
+        information remains secure within your local environment.</p>
+
+    <div class="highlight-box">
+        <p>🔒 Zero-Knowledge & Local Storage Architecture:<br>Wallet Segura Extension does NOT collect, store, or
+            transmit any personal data, passwords, or credentials to external servers. All sensitive data is kept
+            locally on your machine.</p>
+    </div>
+
+    <h2>1. Data Encryption and Storage</h2>
+    <p>All passwords and sensitive user credentials managed by the Wallet Segura ecosystem are stored exclusively inside
+        a local, heavily encrypted <strong>vault file</strong> managed by our companion native Windows Application. The
+        browser extension does not have direct access to this file, ensuring a strong cryptographic boundary.</p>
+
+    <h2>2. Local Communications and Permissions</h2>
+    <p>To function properly, the extension requests the minimum necessary permissions in accordance with Manifest V3
+        standards:</p>
+    <ul>
+        <li><code>activeTab</code> & <code>scripting</code>: Used strictly to securely detect login forms and autofill
+            credentials into web fields following an explicit user action.</li>
+        <li><code>storage</code>: Used strictly to save user preferences and the secure local pairing key required to
+            establish a trust relationship with the Windows desktop application.</li>
+        <li><strong>Host Permission (<code>http://127.0.0*</code>):</strong> This permission is used solely to
+            communicate locally with the native Wallet Segura Windows Application running on your loopback address
+            (localhost). No data ever leaves your computer via external networks.</li>
+    </ul>
+
+    <h2>3. The Pairing Mechanism</h2>
+    <p>To prevent unauthorized access, communication between the extension and the native Windows application requires a
+        unique pairing key. This ensures that only your trusted browser extension can request credentials from your
+        encrypted local vault.</p>
+
+    <h2>4. Third-Party Sharing</h2>
+    <p>We do not collect, sell, trade, or transfer any information to third parties. The extension contains no analytics
+        trackers, tracking cookies, or telemetry software.</p>
+
+    <h2>5. Contact Information</h2>
+    <p>If you have any questions regarding this Privacy Policy or the security of the extension, please contact us
+        at:<br>
+        <strong>omy-menazul@hotmail.com</strong>
+    </p>
+
+    <footer>
+        &copy; 2026 Wallet Segura. All rights reserved. Built for security and privacy.
+    </footer>
+
+</body>
+
+</html>
